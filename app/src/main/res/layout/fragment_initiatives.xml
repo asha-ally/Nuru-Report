@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.InitiativesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+                <!--        android:background="@color/colorPrimary"-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvInitiatives"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    />
+<!--                android:background="@android:color/transparent"-->
+
+            </FrameLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_initiative"
+        android:onClick="buttonClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tooltipText="Add Report"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        tools:ignore="OnClick" />
+
+
+
+</FrameLayout>
+    <!--      android:layout_gravity="bottom||end"-->

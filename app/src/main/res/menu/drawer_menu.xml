@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <!--<item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="Projects" />-->
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/feedback"
+            android:title="About Nuru.live" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/headertext"
+            android:title="Nuru Data Dashboard" />
+
+
+
+    </group>
+
+    <item android:title="Legal">
+        <menu>
+
+            <item
+                android:id="@+id/legal_content_policy"
+                android:title="Content Policy"
+                android:icon="@drawable/credits"
+                /><!--User -->
+
+            <item
+                android:id="@+id/legal_privacy"
+                android:title="Privacy Policy"
+                android:icon="@drawable/credits"/>
+
+            <item
+                android:id="@+id/legal_terms"
+                android:title="Terms of Use"
+                android:icon="@drawable/credits"/>
+
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_tools">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_baseline_person_24"/>
+
+
+            <item
+                android:id="@+id/logOut"
+                android:title="Log Out"
+                android:icon="@drawable/logout"
+                />
+        </menu>
+    </item>
+
+
+</menu>

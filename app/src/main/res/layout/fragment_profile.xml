@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+
+
+            <FrameLayout
+                android:id="@+id/fragment_container1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/transparent">
+                <!--        android:background="@color/colorPrimary"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:clipToPadding="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_basic"
+                    android:clipToPadding="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Reports"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"
+                        android:paddingBottom="@dimen/item_offset_half"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please add a Report"
+                        />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPosts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_report"
+        android:onClick="buttonClick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tooltipText="Add Report"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        tools:ignore="OnClick" />
+
+</FrameLayout>

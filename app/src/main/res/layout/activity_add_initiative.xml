@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Add Initiative"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:padding="@dimen/item_offset">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_offset"
+                android:background="@drawable/card_basic"
+                >
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_note_pink"
+                    android:elevation="5dp"
+                    android:enabled="true"
+                    android:fadeScrollbars="false"
+                    android:gravity="top|left"
+                    android:hint="Initiative Title"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:shadowColor="@color/colorGrayLight"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_offset"
+                android:background="@drawable/card_basic"
+                >
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_note_pink"
+                    android:elevation="5dp"
+                    android:enabled="true"
+                    android:fadeScrollbars="false"
+                    android:gravity="top|left"
+                    android:hint="Give a brief Description"
+                    android:lines="5"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:shadowColor="@color/colorGrayLight"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/start_date"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                    android:drawablePadding="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:elevation="5dp"
+                    android:hint="Start Date"
+                    android:shadowColor="@color/colorGrayLight"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                    android:drawablePadding="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:elevation="5dp"
+                    android:hint="End Date"
+                    android:shadowColor="@color/colorGrayLight"/>
+                <!--                    />-->
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/item_offset_half"
+                android:paddingTop="@dimen/item_offset_half"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp"
+                >
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/autoCompleteTextWrap"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="10">-->
+
+
+<!--                    <AutoCompleteTextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:id="@+id/autoCompleteTextView1"-->
+<!--                        android:hint="@string/enter_chip_txt"-->
+<!--                        android:layout_weight="8"-->
+<!--                        >-->
+<!--                        &lt;!&ndash;<requestFocus></requestFocus>&ndash;&gt;-->
+<!--                    </AutoCompleteTextView>-->
+<!--                    &lt;!&ndash;android:ems="10"&ndash;&gt;-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btnAddTag"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:drawablePadding="6dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColorHint="@color/colorWhite"-->
+<!--                        android:hint="Add"-->
+<!--                        android:textSize="15dp"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:enabled="true"-->
+<!--                        />-->
+
+
+
+<!--                </LinearLayout>-->
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/txt_tags_chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:layout_below="@+id/autoCompleteTextWrap"
+                    />
+                <!--                android:layout_below="@+id/lbl_tags"-->
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tags_chipGroup"
+                    android:layout_marginBottom="@dimen/item_offset"
+                    android:background="@color/cardview_light_background"
+                    android:hint="@string/enter_chip_txt"
+
+                    android:visibility="gone"
+                    />
+                <!--android:textSize="16sp"-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_tags"
+                    android:text="@string/label_chip_more"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/category_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/category_array"
+                    android:padding="16dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Post Initiative"
+                android:textSize="15dp"
+                android:layout_marginTop="0dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

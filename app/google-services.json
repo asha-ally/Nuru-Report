@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "857741722685",
+    "firebase_url": "https://nuru-report.firebaseio.com",
+    "project_id": "nuru-report",
+    "storage_bucket": "nuru-report.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857741722685:android:48ff57d5f1418260df9654",
+        "android_client_info": {
+          "package_name": "com.openinstitute.nuru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857741722685-g12qo8clttchq4g860q01ooirfcptq0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxg0yp_MGdw1fnu9DUxtqmlPjsrzVW14M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857741722685-g12qo8clttchq4g860q01ooirfcptq0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

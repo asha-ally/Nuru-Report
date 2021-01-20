@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Nuru</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Please enter a valid email</string>
+    <string name="invalid_password">Password must be more than 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="nav_header_title">Nuru.Live</string>
+    <string name="nav_header_subtitle">info@nuru.live</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_tools">Tools</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="terms_of_use">I agree to the <b>Terms of Use</b></string>
+    <string-array name="profile_array">
+        <item>Personal Account</item>
+        <item>Student Account</item>
+        <item>Business Account</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+    </string-array>
+    <string name="title_activity_login2">LoginActivity2</string>
+
+    */labels/*
+    <string name="lbl_caution">Nuru.Live</string>
+    <string name="lbl_welcome">Welcome to Nuru.Live. Already have an account? Log-in below, otherwise click on Register. </string>
+    <string name="lbl_msg_save">Save Data?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_remove_file">Remove Attached File?</string>
+    <string name="lbl_no">No</string>
+    <string name="lbl_close">Close</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_proceed">Proceed</string>
+    <string name="search_hint_home">Search for...</string>
+    <string name="search_hint">Enter tag</string>
+    <string name="action_search">Search</string>
+
+    */chips/*
+    <string name="label_chip_tag">Select Tag(s) to Assign:</string>
+    <string name="enter_chip_txt">Search existing tag or add new...</string> <!--Type tags here (press enter to add)-->
+    <string name="label_chip_more">Use commas to generate tags</string>
+
+
+    */Camera/Files/*
+    <string name="file_provider_authority" translatable="false">com.openinstitute.nuru</string> <!--.fileprovider-->
+    <string name="alert_noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+
+
+    */Nuru welcome slides/*
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_head">Welcome to Nuru </string>
+    <string name="slide_1_sub_title">Sample Lottie Animation</string>
+    <string name="slide_1_desc">Nuru is a tool in the citizen’s hands, it will provide governments and other stakeholders with the information they need to develop and offer solutions to the unique challenges faced by their citizens.</string>
+    <string name="slide_1_swipe">Swipe LEFT to proceed</string>
+
+    <string name="slide_2_title">Build your own Initiatives</string>
+    <string name="slide_2_sub_title">sub title two</string>
+    <string name="slide_2_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
+
+    <string name="slide_3_title">Build Custom Forms</string>
+    <string name="slide_3_sub_title">sub title three</string>
+    <string name="slide_3_desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</string>
+
+    <string-array name="tag_array">
+        <item>Work</item>
+        <item>Personal</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat dignissim purus, vel cursus magna venenatis non.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat dignissim purus, vel cursus magna venenatis non. </string>
+
+
+</resources>

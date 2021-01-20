@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/wrap_nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nav_head_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:paddingRight="10dp"
+            app:srcCompat="@drawable/nuru_logo" />
+
+        <TextView
+            android:id="@+id/nav_head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nav_head_avatar"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="@string/nav_header_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/nav_head_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_head_title"
+            android:layout_toRightOf="@+id/nav_head_avatar"
+            android:text="user name" />
+
+
+        <TextView
+            android:id="@+id/nav_head_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nav_head_user_name"
+            android:layout_toRightOf="@+id/nav_head_avatar"
+            android:text="user email" />
+
+    </RelativeLayout>
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nav_imageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_person_black_24dp"
+        app:civ_border_color="@color/colorPrimary"/> -->
+
+</LinearLayout>
